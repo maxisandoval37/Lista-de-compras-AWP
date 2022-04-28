@@ -1,0 +1,19 @@
+.fixed-btn-plus {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.products-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+.mdl-card {
+    width: auto;
+}
+
+.item-text {
+    font-size: large;
+    margin: 10px;
+}

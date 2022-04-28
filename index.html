@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="vendor/mdl/material.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script defer type="text/javascript" src="vendor/mdl/material.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras AWP</title>
+</head>
+<body>
+    
+
+<!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
+  <div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Lista de compras AWP</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+
+        <!--
+          <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1" href="">notifications</div>
+        -->
+          <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--mini-fab">
+            <i class="material-icons">notifications</i>
+          </button>
+
+            <!-- Right aligned menu below button -->
+            <button id="demo-menu-lower-right"
+                    class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+            </button>
+
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+            <li class="mdl-menu__item">Some Action</li>
+            <li class="mdl-menu__item">Another Action</li>
+            <li disabled class="mdl-menu__item">Disabled Action</li>
+            <li class="mdl-menu__item">Yet Another Action</li>
+            </ul>
+
+        </nav>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+
+
+        <ul class="products-list mdl-list ">
+
+            <li class="mdl-list__item mdl-card mdl-shadow--2dp">
+              <span class="mdl-list__item-primary-content">
+
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                    <i class="material-icons">remove</i>
+                </button>
+                    
+                1
+                  
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                    <i class="material-icons">add</i>
+                </button>
+
+                <p class="item-text">Leche en polvo</p>
+                
+              </span>
+
+              <span class="mdl-list__item-secondary-action">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                  <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+                </label>
+              </span>
+            </li>
+
+            <br>
+
+            <li class="mdl-list__item mdl-card mdl-shadow--2dp">
+                <span class="mdl-list__item-primary-content">
+  
+                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                      <i class="material-icons">remove</i>
+                  </button>
+                    
+                  1
+
+                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                      <i class="material-icons">add</i>
+                  </button>
+  
+                  <p class="item-text">Agua mineral</p>
+
+                </span>
+                
+                <span class="mdl-list__item-secondary-action">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                    <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+                  </label>
+                </span>
+              </li>
+
+          </ul>
+
+        <!-- Colored FAB button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fixed-btn-plus">
+        <i class="material-icons">add</i>
+        </button>
+
+      </div>
+    </main>
+    
+</body>
+</html>
